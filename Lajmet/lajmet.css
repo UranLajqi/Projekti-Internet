@@ -1,0 +1,258 @@
+body{
+	background-image: url(llupa.jpg);
+	background-position: left top;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+}
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  background-color: lightblue;
+  color:black;
+}
+
+a:active {
+  background-color:red;
+}
+}
+.koka{
+	width: 100%;
+	color: lightblue;
+	font-size: 30px;
+	font-family: Maiandra GD;
+}
+.koka h1{
+	width: 90%;
+	text-align: center;
+}
+.klasa{
+	display: flex;
+}
+
+.klasa1 h2{
+	font-size: 30px;
+	height: 40px;
+	padding-right:10px;
+	padding-left:10px;
+	padding-bottom: 0px;
+	background-color: lightblue;
+	color: white;
+	font-family: Maiandra GD;
+}
+
+.lista{
+	padding: 40px;
+	border:2px solid black;
+	outline: 4px solid lightblue;
+	outline-offset: 10px;
+}
+.lista li{
+	list-style: none;
+	padding-bottom: 20px;
+	padding-left: 200px;
+	font-size: 25px;
+}
+
+.klasa2{
+	height: 40px;
+	background-color: lightgreen;
+	text-align: center;
+	font-size: 15px;
+	word-spacing: 0.7em;
+	letter-spacing: 0.4em;
+}
+.klasa3 blockquote{
+	width: 70%;
+	font-size: 15px;
+}
+.klasa3{
+	display:flex;
+	line-height: 2.3em;
+}
+
+.klasa4{
+	height: 40px;
+	background-color: lightblue;
+	text-align: center;
+	font-size: 15px;
+	word-spacing: 0.7em;
+	letter-spacing: 0.4em;
+}
+.klasa5 blockquote{
+	width: 70%;
+	font-size: 15px;
+}
+.klasa5{
+	display:flex;
+	line-height: 2.3em;
+}
+
+.klasa6{
+	height: 40px;
+	background-color: greenyellow;
+	text-align: center;
+	font-size: 15px;
+	word-spacing: 0.7em;
+	letter-spacing: 0.4em;
+}
+.klasa7 blockquote{
+	width: 70%;
+	font-size: 15px;
+}
+.klasa7{
+	display:flex;
+	line-height: 2.3em;
+}
+
+.klasa8{
+	height: 40px;
+	background-color: orange;
+	text-align: center;
+	font-size: 15px;
+	word-spacing: 0.7em;
+	letter-spacing: 0.4em;
+}
+.klasa9 blockquote{
+	width: 30%;
+	font-size: 15px;
+}
+.klasa9{
+	display:flex;
+	line-height: 2.3em;
+}
+
+.klasa10{
+	height: 40px;
+	background-color: red;
+	text-align: center;
+	font-size: 15px;
+	word-spacing: 0.7em;
+	letter-spacing: 0.4em;
+}
+.klasa11 blockquote{
+	width: 60%;
+	font-size: 15px;
+}
+.klasa11{
+	display:flex;
+	line-height: 2.3em;
+}
+
+.foto img{
+	display: flex;
+}
+#vija {
+	width: 100%;
+	height: 5px;
+	background-color: black;
+
+}
+.forma{
+	margin-left: 10px;
+	padding: 5px;
+}
+
+.klasa12{
+	height: 40px;
+	background-color:crimson;
+	text-align: center;
+	font-size: 15px;
+	word-spacing: 0.7em;
+	letter-spacing: 0.4em;
+}
+.klasa13 blockquote{
+	width: 70%;
+	font-size: 15px;
+}
+.klasa13{
+	display:flex;
+	line-height: 2.3em;
+}
+
+.klasa14{
+	height: 40px;
+	background-color:gold;
+	text-align: center;
+	font-size: 15px;
+	word-spacing: 0.7em;
+	letter-spacing: 0.4em;
+}
+.klasa15 blockquote{
+	width: 70%;
+	font-size: 15px;
+}
+.klasa15{
+	display:flex;
+	line-height: 2.3em;
+}
+
+.klasa16{
+	height: 40px;
+	background-color: cyan;
+	text-align: center;
+	font-size: 15px;
+	word-spacing: 0.7em;
+	letter-spacing: 0.4em;
+}
+.klasa17 blockquote{
+	width: 70%;
+	font-size: 15px;
+}
+.klasa17{
+	display:flex;
+	line-height: 2.3em;
+}
+
+.klasa18{
+	height: 40px;
+	background-color: coral;
+	text-align: center;
+	font-size: 15px;
+	word-spacing: 0.7em;
+	letter-spacing: 0.4em;
+}
+.klasa19 blockquote{
+	width: 70%;
+	font-size: 15px;
+}
+.klasa19{
+	display:flex;
+	line-height: 2.3em;
+}
+
+.fundi {
+	padding-left: 15px;
+	width: 100%;
+	height: 600px;
+	background-image: url(fundi.png);
+	color: white;
+	font-size:20px;
+	display: inline-flex;
+	line-height: 2.5em;
+	font-family: Bahnschrift Light;
+	font-weight: 1000;
+}
+.fundi a{
+	color: white;
+}
+.fundi3{
+	display:inline-block;
+}
+#shendrrimi{
+	margin-left: 100px;
+	margin-right: 100px;
+	background-image: url(tur.jpg);
+	background-size: 800px 300px;
+	box-shadow: 10px 10px;
+	background-repeat:repeat;	
+	transform: translate(-15px,15px);
+	font-size: 20px;
+	padding: 10px;
+}
