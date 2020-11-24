@@ -1,0 +1,229 @@
+*{
+	font-family: verdana;
+}
+button{
+	padding: 10px;
+	background-color: black;
+	color: white;
+	font-size: 15px;
+	font-family: Arial;
+}
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  background-color: lightblue;
+  color:black;
+}
+
+a:active {
+  background-color:red;
+}
+#koka{
+	margin: 0px;
+	padding-left: 20px;
+	padding: 5px;
+	width: 100%;
+	height: 40px;
+	background-image: linear-gradient(to right, black, crimson);
+	color: white;
+	letter-spacing: 0.4em;
+}
+#permbajtja{
+	float: left;
+	background-color: azure;
+	width: 20%;
+	height: 100%;
+	padding: 20px;
+	font-size: 15px;
+	line-height: 2.6em;
+	position: fixed;
+  	animation-name: NdrrimiNgjyres;
+  	animation-duration: 40s;
+}
+@keyframes NdrrimiNgjyres {
+   0% {background-color: azure;}
+  10% {background-color: aqua;}
+  20% {background-color: azure;}
+  30% {background-color: aqua;}
+  40% {background-color: azure;}
+  50% {background-color: aqua;}
+  60% {background-color: azure;}
+  70% {background-color: aqua;}
+  80% {background-color: azure;}
+  90% {background-color: aqua;}
+  100% {background-color: azure;}
+}
+#permbajtja a{
+	text-decoration: none;
+	color: black;
+}
+
+#trupi{
+	margin-left: 27%;
+	margin-top: 20px;
+	line-height: 2em;
+}
+#trupi a{
+	text-decoration: none;
+	color: black;
+}
+#trupi li{
+	padding: 5px;
+}
+blockquote{
+	margin: 30px;
+	margin-left: 0;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 95%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+th{
+	background-color: black;
+	color: white;
+}
+tr:nth-child(1)  {
+  background-color: lightblue;
+}
+tr:nth-child(2)  {
+  background-color: lightgreen;
+}
+tr:nth-child(3)  {
+  background-color: red;
+}
+tr:nth-child(4)  {
+  background-color: pink;
+}
+tr:nth-child(5)  {
+  background-color: blue;
+}
+tr:nth-child(6)  {
+  background-color: green;
+}
+tr:nth-child(7)  {
+  background-color: orange;
+}
+tr:nth-child(8)  {
+  background-color: aqua;
+}
+tr:nth-child(9)  {
+  background-color: yellow;
+}
+tr:nth-child(10)  {
+  background-color: crimson;
+}
+tr:nth-child(11)  {
+  background-color: lightgrey;
+}
+tr:nth-child(12)  {
+  background-color: aquamarine;
+}
+td:hover {background-color:lightgrey;}
+
+.theksohet {
+	color: crimson;
+	font-family: Courier New;
+}
+
+p.outset {
+	border-style: outset;
+	padding: 10px;
+	border-radius: 5px;
+}
+p.paragrafi{
+	line-height: 2em;
+	border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+    border-color: black;
+    padding: 10px;
+	border-radius: 10px;
+  	outline-width: medium;
+}
+
+.paragrafi{
+	background-color: lightblue;
+}
+
+blockquote.paragrafi2{
+	text-align: center;
+	width: 300px;
+	outline: thick ridge crimson;
+	padding: 10px;
+	position: relative;
+	animation-name: titulli;
+	animation-duration: 4s;
+}
+@keyframes titulli{
+  0%   {background-color:lightblue; left:0px; right:0px;}
+  25%  {background-color:yellow; left:500px; right:0px;}
+  50%  {background-color:lightblue; left:0px; right:500px;}
+  75%  {background-color:yellow; left:500px; right:0px;}
+  100% {background-color:lightblue; left:0px; right:500px;}
+}
+
+blockquote.paragrafi3{
+	text-align: center;
+	width: 300px;
+	outline: thick ridge crimson;
+	padding: 10px;
+	position: relative;
+	animation-name: titulli3;
+	animation-duration: 4s;
+}
+@keyframes titulli3{
+  0%   {background-color:yellow; left:0px; right:0px;}
+  25%  {background-color:lightblue; left:0px; right:500px;}
+  50%  {background-color:yellow; left:500px; right:0px;}
+  75%  {background-color:lightblue; left:0px; right:500px;}
+  100% {background-color:yellow; left:500px; right:0px;}
+}
+
+#Amazon{
+	type="i";
+}
+
+#puntoret{
+	margin-top: 40px;
+	margin-left: 100px;
+	background-image: url(book.png), url(prapaskena.png);
+	background-position: right bottom, top left;
+	background-repeat:no-repeat, repeat;
+	border-radius: 15px 20px;
+	width: 700px;
+	height: 300px;
+	transform: scale(1.2,1.2);
+	color: white;
+	font-size: 15px;
+	font-family: Verdana;
+	padding: 10px;
+}
+
+#fundi{
+	background-color: black;
+	color: white;
+	display: inline-flex;
+	width: 100%;
+}
+#fundi a{
+	color: white;
+}
+.fund{
+	margin: 20px;
+}

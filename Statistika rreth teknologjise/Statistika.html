@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Statistika rreth teknologjise</title>
+	<link rel="stylesheet" type="text/css" href="Statistika.css">
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="Statistika.js"></script>
+</head>
+<body>
+
+<header>
+  <h1 id="koka">
+    Statistika
+  </h1>
+</header>
+<aside id="permbajtja">
+  <p>
+    <strong>Permbajtja</strong>
+  </p>
+  <ul style="list-style-type: square;">
+    <li>
+      <a href="#myCanvas">Kompanit më të mëdha softuerike</a>
+    </li>
+    <li>
+      <a href="#2">Kompanite më të mëdha në internet</a>
+    </li>
+    <li>
+      <a href="#3">Kompanive më të mëdha sipas të ardhurave</a>
+    </li>
+    <li>
+      <a href="#4">Trendet per vitin 2020</a>
+    </li>
+    <li>
+      <a href="#5">Kompanit e teknologjisë qe u shuan</a>
+    </li>
+    <li>
+      <a href="#6">Fundi</a>
+    </li>
+  </ul>
+</aside>
+<div id="trupi">
+  <canvas id="myCanvas" width="410" height="60" style="border:1px solid #d3d3d3;">
+    Browseri juaj nuk e mbeshtet elementin canvas
+  </canvas>
+  <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        var grd = ctx.createRadialGradient(75,50,5,90,60,700);
+        grd.addColorStop(0,"black");
+        grd.addColorStop(1,"red");
+        ctx.fillStyle = grd;
+        ctx.fillRect(0,0,410,60);
+        var canvas = document.getElementById("myCanvas");
+        var ctx=canvas.getContext("2d");
+        ctx.font="25px Comic Sans MS";
+        ctx.fillStyle = "white";
+        ctx.textAlign = "center";
+        ctx.fillText("Kompanit më të mëdha softuerike",200,40);
+  </script><br>
+  <p class="outset">
+    Ekzistojnë shumë lista që ofrojnë një përmbledhje të kompanive të mëdha softuerësh, shpesh të quajtura <q>shitës të pavarur softuerësh</q> (<abbr title="Independent Software Vendor"><q>ISV</q></abbr>), në botë. Listat ndryshojnë sipas metodologjisë së përbërjes dhe si pasojë tregojnë dallime thelbësore në kompanitë e listuara dhe renditjen e këtyre kompanive.
+  </p><img src="animacioni.gif" alt="Animacion" width="450" height="450" style="float: right;margin-right: 200px;">
+  <p id="demo"></p>
+  <script>
+    var vektori, teksti, i;
+    vektori = ["Alphabet", "Microsoft", "IBM", "Accenture","Facebook","Oracle",
+    "SAP","Tencent","TCS","Baidu"];
+    teksti = "<ol>";
+    for (i = 0; i < 10; i++) {
+      teksti += "<li>" + vektori[i] + "<\/li>";
+    }
+    teksti += "<\/ol>";
+    document.getElementById("demo").innerHTML = teksti;
+  </script><br>
+  <hr>
+  <br>
+  <h3 id="2">
+    <strong>Kompanite më të mëdha në internet</strong>
+  </h3><br>
+  <p class="paragrafi">
+    Kjo është një listë e kompanive të <b>Internetit</b> sipas të ardhurave dhe kapitalizimit të tregut.Lista është e kufizuar në kompanitë <i>dot-com</i>, të përcaktuara si një kompani që kryen pjesën më të madhe të biznesit të saj në <b>Internet</b>, me të ardhura vjetore që tejkalojnë 1 miliard dollarë amerikanë. Përjashton ofruesit e shërbimeve të <b>Internetit</b> ose kompanitë e tjera të teknologjisë së informacionit. Për një listë më të përgjithshme të kompanive teknologjike, shihni listën e kompanive më të mëdha të teknologjisë së informacionit. Kjo listë është e paplotë dhe nuk përfshin disa kompani <i>dot-com</i> të fituara nga firmat ekzistuese të tullave dhe llaçeve për të zgjeruar kanalet e shpërndarjes.
+  </p>
+  <ol style="margin-top:10px;" type="I">
+    <li>
+      <a href="#">Amazon</a>
+      <h5>
+        Statistikat e Amazonës që duhet të dini në vitin 2020
+      </h5>
+      <ol id="Amazon">
+        <li>Popullariteti i Amazon
+        </li>
+        <li>Konsumatorët i besojnë Amazon
+        </li>
+        <li>Numri i Anëtarëve Kryeministër të Amazonës
+        </li>
+        <li>Numri i produkteve të disponueshme në Amazon
+        </li>
+        <li>The Most Popular Amazon Product Category
+        </li>
+      </ol><button>Kliko</button>
+    </li>
+    <li>
+      <a href="#">Google</a>
+    </li>
+    <li>
+      <a href="#">JD.com</a>
+    </li>
+    <li>
+      <a href="#">Alibaba</a>
+    </li>
+    <li>
+      <a href="#">Facebook</a>
+    </li>
+    <li>
+      <a href="#">Tencent</a>
+    </li>
+    <li>
+      <a href="#">Netflix</a>
+    </li>
+    <li>
+      <a href="#">PayPal</a>
+    </li>
+    <li>
+      <a href="#">Booking</a>
+    </li>
+    <li>
+      <a href="#">Baidu</a>
+    </li>
+  </ol><br>
+  <hr>
+  <br>
+  <!-- tabela -->
+  <blockquote class="paragrafi2">
+    <mark>Kjo është një listë e kompanive më të mëdha teknologjike në botë sipas të ardhurave.</mark> Lista tregon kompanitë e teknologjisë të renditura nga të ardhurat vjetore nga vitet e tyre fiskale të përfunduara në ose para 31 Mars 2018, sipas revistës <u>Fortune Global</u> 500. Aspektet e tjera që nuk tregohen këtu, në veçanti kapitalizimi i tregut, shpesh përdoren në mënyrë alternative për të përcaktuar madhësinë e një kompanie.
+  </blockquote>
+  <blockquote class="paragrafi3">
+    Lista përfshin ndërmarrjet, aktivitetet parësore të të cilave janë të lidhura me industrinë e teknologjisë e cila përfshin: <small>pajisje kompjuterike, programe kompjuterike, elektronikë, gjysmëpër&ccedil;ues, internet, pajisje telekomunikuese, e-tregti dhe shërbime kompjuterike.</small> <em>Shënim: Kjo listë tregon vetëm kompani me të ardhura vjetore që tejkalojnë 50 miliardë dollarë amerikanë.</em>
+  </blockquote>
+  <table id="tabela" cellspacing="5" cellpadding="5">
+    <caption id="3">
+      <strong>Listë e kompanive më të mëdha teknologjike në botë sipas të ardhurave</strong>
+    </caption>
+    <thead>
+      <tr>
+        <th>
+          Rank
+        </th>
+        <th colspan="2">
+          Company
+        </th>
+        <th>
+          Fiscal Year Ending
+        </th>
+        <th>
+          Revenue($B) USD
+        </th>
+        <th>
+          Employees
+        </th>
+        <th>
+          Headquarters
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          1
+        </td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/United_States"><img src="foto/us.png" width="25" height="15"></a>
+        </td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Apple_Inc." target="_blank">Apple Inc.</a>
+        </td>
+        <td>
+          30 September 2017
+        </td>
+        <td>
+          $229.2
+        </td>
+        <td>
+          123,000
+        </td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Cupertino,_California">Cupertino, California,</a> <a href="https://en.wikipedia.org/wiki/United_States">US</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          2
+        </td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/South_Korea"><img src="foto/southKorea.png" width="25" height="15"></a>
+        </td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Samsung_Electronics" target="_blank">Samsumg Electronics</a>
+        </td>
+        <td>
+          31 December 2017
+        </td>
+        <td>
+          $211.9
+        </td>
+        <td>
+          320,670
+        </td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Suwon">Suwon,</a> <a href="https://en.wikipedia.org/wiki/South_Korea">South Korea</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          3
+        </td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/United_States"><img src="foto/us.png" width="25" height="15"></a>
+        </td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Amazon_(company)" target="_blank">Amazon</a>
+        </td>
+        <td>
+          31 December 2017
+        </td>
+        <td>
+          $177,9
+        </td>
+        <td>
+          613,300
+        </td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Seattle">Seattle, Washington,</a> <a href="https://en.wikipedia.org/wiki/United_States">US</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          4
+        </td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Taiwan"><img src="foto/taiwan.png" width="25" height="15"></a>
+        </td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Foxconn" target="_blank">Foxconn</a>
+        </td>
+        <td>
+          31 December 2017
+        </td>
+        <td>
+          $154,7-158
+        </td>
+        <td>
+          803,126
+        </td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/New_Taipei_City">New Taipei City,</a> <a href="https://en.wikipedia.org/wiki/Taiwan">Taiwan</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          5
+        </td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/United_States"><img src="foto/us.png" width="25" height="15"></a>
+        </td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Alphabet_Inc." target="_blank">Alphabet Inc.</a>
+        </td>
+        <td>
+          31 December 2017
+        </td>
+        <td>
+          $110,8
+        </td>
+        <td>
+          80,110
+        </td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Mountain_View,_California">Mountain View, California,</a> <a href="https://en.wikipedia.org/wiki/United_States">US</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          6
+        </td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/United_States"><img src="foto/us.png" width="25" height="15"></a>
+        </td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Microsoft" target="_blank">Microsoft</a>
+        </td>
+        <td>
+          31 June 2017
+        </td>
+        <td>
+          $90,0
+        </td>
+        <td>
+          124,000
+        </td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Redmond,_Washington">Redmond, Washington,</a> <a href="https://en.wikipedia.org/wiki/United_States">US</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          7
+        </td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/China"><img src="foto/china.png" width="25" height="15"></a>
+        </td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Huawei" target="_blank">Huawei</a>
+        </td>
+        <td>
+          31 December 2017
+        </td>
+        <td>
+          $89,3-92,5
+        </td>
+        <td>
+          180,000
+        </td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Shenzhen">Shenzhen,</a><a href="https://en.wikipedia.org/wiki/China">China</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          8
+        </td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Japan"><img src="foto/japan.png" width="25" height="15"></a>
+        </td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Hitachi" target="_blank">Hitachi</a>
+        </td>
+        <td>
+          31 March 2018
+        </td>
+        <td>
+          $84,6
+        </td>
+        <td>
+          307,275
+        </td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Tokyo">Tokyo,</a> <a href="https://en.wikipedia.org/wiki/Japan">Japan</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          9
+        </td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/United_States"><img src="foto/us.png" width="25" height="15"></a>
+        </td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/IBM" target="_blank">IBM</a>
+        </td>
+        <td>
+          31 December 2017
+        </td>
+        <td>
+          $79,1
+        </td>
+        <td>
+          397,800
+        </td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Armonk,_New_York">Armonk, New York,</a> <a href="https://en.wikipedia.org/wiki/United_States">US</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          10
+        </td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/United_States"><img src="foto/us.png" width="25" height="15"></a>
+        </td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Dell_Technologies" target="_blank">Dell Technologies</a>
+        </td>
+        <td>
+          31 January 2018
+        </td>
+        <td>
+          $78,7
+        </td>
+        <td>
+          145,000
+        </td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Round_Rock,_Texas">Round Rock, Texas,</a> <a href="https://en.wikipedia.org/wiki/United_States">US</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          11
+        </td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Japan"><img src="foto/japan.png" width="25" height="15"></a>
+        </td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Sony" target="_blank">Sony</a>
+        </td>
+        <td>
+          31 March 2018
+        </td>
+        <td>
+          $77,1
+        </td>
+        <td>
+          117,300
+        </td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Tokyo">Tokyo,</a> <a href="https://en.wikipedia.org/wiki/Japan">Japan</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          12
+        </td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Japan"><img src="foto/japan.png" width="25" height="15"></a>
+        </td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Panasonic" target="_blank">Panasonic</a>
+        </td>
+        <td>
+          31 March 2018
+        </td>
+        <td>
+          $72,0
+        </td>
+        <td>
+          274,143
+        </td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Osaka">Osaka,</a> <a href="https://en.wikipedia.org/wiki/Japan">Japan</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h6>
+    Me se shumti puntore ne <em>Listën e kompanive më të mëdha teknologjike në botë sipas të ardhurave</em> ka kompania Foxconn
+  </h6>
+  <hr>
+  <br>
+  <h3 id="4">
+    Trendet qe duhet percjellur per vitin 2020
+  </h3><br>
+  <ol style="list-style-type: none;">
+    <li>&#9824; Tech-Washing Fades in Favor of Real Strategy
+      <p class="fshehja">
+        Falë fluksit të gjerë të teknologjive miqësore për përdoruesit, është bërë e njohur të thuhet se <span class="theksohet">çdo kompani është një kompani e teknologjisë.</span> Por kudo, teknologjia nuk ndryshon domosdoshmërisht modelin themelor të biznesit. Ndërsa transformimi dixhital po krijon rrugë të reja për rritje, kompanitë po zbulojnë se ata thjesht nuk mund të shajnë etiketat e teknologjisë në produktet dhe praktikat e tyre dhe automatikisht korr përfitimet. Në njërën anë të spektrit, kjo merr formën e kompanive më të mëdha që shkojnë në publik dhe duke luftuar me realitetet e industrisë së tyre. Ekzistojnë ekonomi dhe rregullore të përcaktuara mirë në industri si&ccedil; janë transporti ose pasuritë e paluajtshme.
+      </p>
+      <p id="tekno">
+        Kliko per te pare sa here e kemi perdorur fjalen teknologji?
+      </p><button onclick="funksioni()">Shtype</button> 
+      <script>
+      function funksioni() {
+      var paragrafi = "Falë fluksit të gjerë të teknologjive miqësore për përdoruesit, është bërë e njohur të thuhet se çdo kompani është një kompani e teknologjisë.Por kudo, teknologjia nuk ndryshon domosdoshmërisht modelin themelor të biznesit. Ndërsa transformimi dixhital po krijon rrugë të reja për rritje, kompanitë po zbulojnë se ata thjesht nuk mund të shajnë etiketat e teknologjisë në produktet dhe praktikat e tyre dhe automatikisht korr përfitimet. Në njërën anë të spektrit, kjo merr formën e kompanive më të mëdha që shkojnë në publik dhe duke luftuar me realitetet e industrisë së tyre. Ekzistojnë ekonomi dhe rregullore të përcaktuara mirë në industri si&ccedil; janë transporti ose pasuritë e paluajtshme.";
+      var rezultati = paragrafi.match(/teknologji/gi);
+      document.getElementById("tekno").innerHTML = rezultati;
+      }
+      </script>
+    </li>
+    <li>&#9824; Workforce Diversity Grows in Many Ways
+      <p class="fshehja" id="po">
+        Diversiteti i fuqisë punëtore më së shpeshti i referohet të kesh një popullsi të punësuar që reflekton popullsinë e përgjithshme, pa asnjë trajtim preferencial ose masë kufizuese të dhënë në bazë të gjinisë, racës, moshës apo faktorëve të tjerë. Fuqia punëtore e teknologjisë në ve&ccedil;anti ka qenë nën mikroskop për mungesën e diversitetit, falë paragjykimeve të pavetëdijshme dhe optimizmit së bashku me sjellje të tjera që janë shumë më të vetëdijshme, si&ccedil; janë pengesat për të hyrë për studentët me të ardhura të ulëta apo edhe raportet e abuzimit të hapur.
+      </p>
+      <p>
+        Ne paragrafin e me siperm fjala mikroskop ekziston:
+      </p>
+      <p id="PROVO"></p>
+      <script>
+        teksti = document.getElementById("po").innerHTML; 
+        document.getElementById("PROVO").innerHTML = /mikroskop/.test(teksti);
+      </script>
+    </li>
+    <li>&#9824; Tech Topics Are Front and Center in U.S. Elections
+      <p class="fshehja">
+        Ndërsa industria e IT po piqet, ka sfida të paraqitura si rezultat i ndikimit më të madh të teknologjisë në ekonomi dhe integrimit më të thellë me shoqërinë. <span class="theksohet">Në vitin 2020, cikli i zgjedhjeve në Sh.B.A</span> do të përqendrojë vëmendjen e shumë prej këtyre &ccedil;ështjeve. Debati në Uashington dhe në të gjithë vendin tashmë ka filluar në lidhje me përgjegjësitë e disa lojtarëve në sektorin e IT.
+      </p>
+      <p id="provo1"></p>
+      <script>
+        var gjej = /WWW/.exec("The World Wide Web (WWW), commonly known as the Web, is an information system where documents and other web resources are identified by Uniform Resource Locators (URLs, such as https://www.example.com/), which may be interlinked by hypertext, and are accessible over the Internet.!");
+        document.getElementById("provo1").innerHTML =
+        "WWW gjendet ne poziten " + gjej.index + " ne tekstin: <br>" + gjej.input;
+      </script>
+    </li>
+    <li>&#9824; Hype Meets Reality with Emerging Technology
+      <p class="fshehja">
+        Gjatë disa viteve të fundit, ka pasur shumë eksitim rreth teknologjive në zhvillim. Në një nivel operacional, ky ka qenë një trend pozitiv pasi ka ndihmuar bizneset të ndërtojnë praktika më të mira për vlerësimin e temave të fazës së hershme dhe përshpejtimin e adoptimit. Në një nivel taktik, megjithatë, ajo ka krijuar një kaos. Pa shansin të presin dhe të shohin se cilat teknologji dëshmojnë vlerën e tyre, kompanitë e kanë parë veten të përballur me një mundësi zgjedhjesh - një situatë që përkeqëson kufizimet e burimeve dhe boshllëqet e aftësive. Duke u drejtuar në një vit të ri, <span class="theksohet">niveli i lartë i teknologjisë në zhvillim mbetet i lartë, ve&ccedil;anërisht midis atyre firmave që shesin dhe mbështesin teknologjinë.</span>
+      </p>
+    </li>
+    <li>&#9824; Internet of Things Continues to Redefine IT Architecture
+      <p class="fshehja">
+        Si një nga dy teknologjitë në zhvillim që po fiton tërheqje të konsiderueshme, interneti i gjërave duket se është i gatshëm të bashkohet me cloud computing dhe pajisjet mobile si një pjesë e përhershme e peizazhit të teknologjisë moderne. Bizneset po zbulojnë shpejt vlerën në dixhitalizimin e mjedisit dhe operacioneve të tyre, duke mbledhur të dhëna që mund të ndihmojnë në marrjen e vendimeve në të ardhmen. Trendi po tregon gjithashtu kthime pozitive për kompanitë që shesin dhe mbështesin teknologjinë. Gjysma e këtyre firmave raportojnë ose nivele të mëdha ose të vogla të shitjeve të lidhura me IoT në vitin e kaluar, me të tjerët që eksperimentojnë brenda.
+      </p>
+    </li>
+    <li>&#9824; Artificial Intelligence Eats the World
+      <p class="fshehja">
+        &Ccedil;e kur Marc Andreessen bëri deklaratën e tij tani të famshme në lidhje me softuerin në 2011, ai mund të mos e ketë kuptuar as masën në të cilën do të konsumohej bota gjatë dekadës së ardhshme. Cloud computing uli si pengesën për zhvillimin e programeve ashtu edhe pengesën për shpërndarje, dhe pajisjet celulare e shtrinë shtrirjen e softverit në qoshet e paarritur më parë. Efekti neto ishte një rritje eksponenciale në aftësinë e softuerit për të drejtuar aktivitet. Kjo krijoi një sfidë të re në kryerjen e veprimtarisë së përmendur dhe veprimit të të dhënave të mbledhura. Hyni në inteligjencën artificiale.
+      </p>
+    </li>
+  </ol><button id="Fshehi">Fshehi paragrafet e me siperme</button> <button id="Shfaqi">Shfaqi paragrafet e me siperme</button><br>
+  <hr>
+  <br>
+  <h3 id="5">
+    Kompanit e teknologjisë që spektakolarisht shkuan në renie ose u zhduken nga ekzistenca
+  </h3>
+  <dl id="Kompanit">
+    <dt>
+      Iomega
+    </dt>
+    <dd>
+      &#9827; Vitet e funksionimit: 1980 - 2013
+    </dd>
+    <dd>
+      &#9827; Fati: blerë nga EMC në 2008
+    </dd>
+    <dd>
+      &#9827; &Euml;sht&euml; më e njohur për: Disku ZIP (në foto)
+    </dd>
+    <dt>
+      Napster
+    </dt>
+    <dd>
+      &#9827; Years of Operation: 1999 - 2001
+    </dd>
+    <dd>
+      &#9827; Fati: I detyruar të mbyllë në 2001 për të zbatuar një vendim të shkeljes së të drejtave të autorit në Sh.B.
+    </dd>
+    <dt>
+      Boo.com
+    </dt>
+    <dd>
+      &#9827; Vitet e funksionimit: 1999-2000
+    </dd>
+    <dd>
+      &#9827; Fati: Kompania harxhoi 135 milion dollarë kapital sipërmarrjeje në vetëm 18 muaj dhe u vendos në marrje më 18 maj 2000 dhe u likuidua
+    </dd>
+    <dd>
+      &#9827; &Euml;sht&euml; më e njohur për: Moda Online dhe të qenët një nga dështimet e para spektakolare të dot-com boom
+    </dd>
+    <dt>
+      Compaq
+    </dt>
+    <dd>
+      &#9827; Vitet e funksionimit: 1982 - 2013
+    </dd>
+    <dd>
+      &#9827; Fati: Compaq u ble për 25 miliardë dollarë amerikanë nga HP në 2002
+    </dd>
+    <dd>
+      &#9827; Më të njohurit për: kompjutera personalë
+    </dd>
+  </dl><button id="butt">Fsheh</button>
+  <div id="puntoret">
+    <p>
+      Puntoret me te suksesshem ne kompanine tone ne kete vit jane:
+    </p>
+    <p id="puntori1"></p>
+    <script src="Statistika.js"></script>
+    <p id="puntori2"></p>
+    <script src="Statistika.js"></script>
+    <p id="puntori3"></p>
+    <script src="Statistika.js"></script>
+    <p id="puntori4"></p>
+    <script src="Statistika.js"></script>
+  </div><br>
+  <br>
+  <!-- fundi -->
+  <footer id="fundi">
+    <div class="fund">
+      <h4>
+        Gazeta Elektronike
+      </h4><svg width="300" height="80">
+      <rect rx="60" ry="60" width="200" height="60" style="fill:balck;stroke-width:3;stroke:rgb(0,0,0)"></rect>
+      <text x="45" y="55" fill="white" font-size="30px">
+        GElektron
+      </text>
+      <line x1="35" y1="30" x2="35" y2="60" style="stroke:yellow;stroke-width:6"></line>Sorry, your browser does not support inline SVG. </svg>
+    </div>
+    <div class="fund">
+      <h4>
+        Kontaktet:
+      </h4>
+      <p>
+        <a href="MAILTO:uran_lajqi_1@outlook.com">uran_lajqi_1@outlook.com</a>
+      </p>
+      <p>
+        Numri i telefonit: 044 123 456
+      </p>
+      <p>
+        Gjendemi ne Prishtine,Qendra e Stundeteve
+      </p>
+    </div>
+    <div class="fund">
+      <h4>
+        Adresa
+      </h4>
+      <address id="6">
+        <p id="punuan"></p>
+        <script>
+        var personiPare = {
+        emri    : "Uran",
+        mbiemri : "Laj&ccedil;i",
+        };
+        var personiDyte = {
+        emri    : "Rinor",
+        mbiemri : "Mehmeti",  
+        };
+        document.getElementById("punuan").innerHTML =
+        "Punuar nga  " +  personiPare.emri + " " + personiPare.mbiemri + " dhe " 
+        +  personiDyte.emri + " " + personiDyte.mbiemri;
+        </script> Qendra e Studenteve, Prishtine<br>
+        Kosove
+      </address>
+    </div>
+  </footer>
+</div>
+
+</body>
+</html>
