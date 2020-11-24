@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulari</title>
+	<link rel="stylesheet" type="text/css" href="Formulari.css">
+	<style>
+		*{
+			max-width: 1000px;
+			margin: auto;
+			box-sizing: border-box;
+		}
+		body{
+			background-color: AliceBlue;
+		}
+		div{
+			margin:0px;
+		}
+		p{
+			margin: 0px;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+	  $("input").focus(function(){
+	    $(this).css("background-color", "lightblue");
+	  });
+	  $("input").blur(function(){
+	    $(this).css("background-color", "lightgreen");
+	  });
+	});
+	</script>
+	<script>
+	$(document).ready(function(){
+	  $("#A").click(function(){
+	    alert("Value: " + $("#test1").val());
+	  });
+	});
+	</script>
+	<script>
+	$(document).ready(function(){
+	  $("#B").click(function(){
+	    alert("Value: " + $("#test2").val());
+	  });
+	});
+	</script>
+</head>
+<body>
+
+<div id="faqja"> 
+
+<div id="majt">
+	<p><b>Adresa:</b><br>
+		Qendra e Studenteve,
+		Prishtine
+	</p>
+	<hr>
+	<p><b>Numrat e Telefonit</b><br>
+		044 123 456<br>
+		049 847 214
+	</p>
+	<hr>
+	<p><b>E-mail:</b><br>
+	<a href="MAILTO:uran_lajqi_1@outlook.com" style="color: white;">uran_lajqi_1@outlook.com</a>
+	</p>
+	<button id="butoniKohes" onclick="document.getElementById('demo').innerHTML=Date()">Data dhe ora jane?</button>
+	<p id="demo"></p>
+
+	<p id="punuan" style="font-size: 20px;"></p>
+	
+	<script>
+	var personiPare = {
+	  emri 	  : "Uran",
+	  mbiemri : "Laj&ccedil;i",
+	};
+	var personiDyte = {
+	  emri 	  : "Rinor",
+	  mbiemri : "Mehmeti",	
+	};
+
+	document.getElementById("punuan").innerHTML =
+	"Punuar nga  " +  personiPare.emri + " " + personiPare.mbiemri + " dhe " 
+	+  personiDyte.emri + " " + personiDyte.mbiemri;
+	</script>
+
+</div>
+
+<div id="djatht">
+	<form id="forma" action="MAILTO:uran_lajqi_1@outlook.com">
+		<b>Plotesoni formularin per punsim</b><br>
+
+		<b>Emri:</b>
+		<keygen name="security"></keygen><br>
+		<div id="emriKliko">
+			<input class="klasa" id="test1" type="text" name="Emri" placeholder="Shenoni emrin tuaj" style="padding-right: 180px;"><br>
+			<button id="A">Kliko</button>
+		</div><br>
+
+		<b>Mbiemri:</b><br>
+		<div id="emriKliko">
+			<input class="klasa" id="test2" type="text" name="Mbiemri" placeholder="Shenoni mbiemrin tuaj" style="padding-right: 180px;"><br>
+			<button id="B">Kliko</button>
+		</div><br>
+
+		<b>Mosha</b><br>
+		<input id="mosha" type="text">
+		<button type="button" onclick="funksioniMosha()">Testo</button>
+		<p id="p01"></p>
+		
+		<script>
+		function funksioniMosha() {
+		  var mesazhi, x;
+		  mesazhi = document.getElementById("p01");
+		  mesazhi.innerHTML = "";
+		  x = document.getElementById("mosha").value;
+		  try { 
+		    if(x == "")  throw "eshte e zbrazet";
+		    if(isNaN(x)) throw "nuk eshte numer";
+		    x = Number(x);
+		    if(x < 18)  throw "shume e vogel";
+		    if(x > 65)   throw "shume e madhe";
+		  }
+		  catch(gabimi) {
+		    mesazhi.innerHTML = "Mosha  " + gabimi;
+		  }
+		}
+		</script>
+
+		<b>Datelindja:</b><br>
+		<input class="klasa" type="date" name="Datelindja" placeholder="Shenoni datelindjen tuaj"><br>
+
+		<label style="padding-right:15px; "><b>Gjinia</b></label>
+		<input type="radio" name="gjinia" value="1">M
+		<input type="radio" name="gjinia" value="1">F<br>
+
+		<b>Numri i telefonit</b><br>
+		<input class="klasa" type="text" name="numri" placeholder="Shenoni numrin e telefonit" pattern="[1-2-3-4-5-6-7-8-9]{9}" title="Shenoni 9 numra"><br>
+
+		<b>Email:</b><br>
+		<input class="klasa" type="email" name="emaili" autocomplete="off" placeholder="Shenoni emaili tuaj"><br>
+
+		<b>Password:</b><br>
+		<input class="klasa" type="password" name="password" placeholder="Shenoni passwordin tuaj"><br>
+
+		<b>Mesazhi:</b><br>
+		<textarea type="message" name="Mesazhi" placeholder="Shenoni mesazhin tuaj per ne"></textarea><br>
+
+		<b>Ne cilat gjuhe programuese keni njohuri</b><br>
+		<input type="checkbox" name="gjuhet" value="1">C++
+		<input type="checkbox" name="gjuhet" value="1">Java
+		<input type="checkbox" name="gjuhet" value="1">C#
+		<input type="checkbox" name="gjuhet" value="1">Python<br>
+		
+		<b>Sa vite keni provoje pune:</b>
+		<input class="klasa" type="number" name="vite" min="0">
+
+		<b>Zgjidhni shtetin ku jetoni</b><br>
+		<input list="Shtetet">
+
+		<datalist id="Shtetet">
+			<option value="Kosova"></option>
+			<option value="Shqiperia"></option>
+			<option value="Amerika"></option>
+			<option value="Gjermania"></option>
+			<option value="Anglia"></option>
+			<option value="Portugralia"></option>
+			<option value="Australia"></option>
+			<option value="Japonia"></option>
+		</datalist><br>
+
+		<input id="butoniSubmit" type="submit" name="submit" >
+	</form>
+</div>
+</div>
+
+</body>
+</html>

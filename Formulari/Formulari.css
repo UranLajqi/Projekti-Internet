@@ -1,0 +1,83 @@
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  background-color: lightblue;
+  color:black;
+}
+
+a:active {
+  background-color:red;
+}
+
+#faqja{
+	margin-top: 30px;
+	background-color: white;
+	width: 100%;
+	height: 1000px;
+	display: flex;	
+}
+
+#majt{
+	width: 40%;
+	height:1000px;
+	background-image: url(ura.jpg);
+	padding: 40px;
+	color: white;
+	font-family: verdana;
+	font-size: 20px;
+	background-position: center;
+	line-height: 2.3em;
+}
+
+#butoniKohes{
+	font-size: 15px;
+	padding: 5px;
+	background-color: Beige;
+}
+
+#djatht{
+	width: 60%;
+	height: 1000px;
+	background-color: white;
+}
+
+.klasa{
+	width: 100%;
+}
+
+textarea {
+  padding: 5px; 
+  height: 50px;
+  width: 300px;
+  resize: horizontal;
+  background-color: Beige;
+  font-size: 15px;
+}
+
+#forma{
+	padding:80px;
+	padding-left:120px;
+	padding-top:50px;
+	line-height: 1.7em;
+	font-family: verdana;
+	font-size: 20px; 
+}
+
+#emriKliko{
+	display: inline-flex;
+}
+
+#butoniSubmit{
+	background-color: black;
+	color: white;
+	font-size: 20px;
+	padding: 5px;
+	float: right;
+}
