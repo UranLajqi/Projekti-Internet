@@ -1,0 +1,203 @@
+*{
+	max-width: 940px;
+	margin: auto;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  background-color: lightblue;
+  color:black;
+}
+
+a:active {
+  background-color:red;
+}
+
+header{
+  display: flex;
+  margin: 20px;
+}
+
+svg{ 
+  margin: 0px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.nenKoka1{
+  margin: 20px;
+}
+
+/*Ndrrimi i fotove*/
+.mySlides {
+  display: none;
+  box-sizing: border-box;
+  margin:0;
+}
+
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.prev, .next {
+  cursor:pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next {font-size: 11px}
+}
+
+nav{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+nav li{
+	list-style: none;
+	display: inline;
+	padding-right: 15px;
+}
+/*univerzitetet*/
+.klasa2{
+	column-count: 3;
+	column-gap: 50px;
+}
+
+.klasa2 a{
+	float: right;
+}
+/*evolimi i kompujtereve*/
+.klasa3{
+	display: flex;
+	justify-content: space-between;
+}
+/*personalitetet ne kompjuterik*/
+.klasa4{
+	display: flex;
+	justify-content: space-between;
+}
+
+.nenklasa4{
+	padding-right: 15px;
+}
+/*te dhenat*/
+.klasa5{
+	background-color: black;
+	color: white;
+	display: flex;
+	width: 100%;
+	line-height: 1.5em;
+}
+.klasa5 a:link{
+	color: white;
+}
+
+.nenklasa5{
+	margin: 15px;
+	padding: 15px;
+}
+
+.link1 a{
+	float: right;
+}
+#butoni{
+	background-color: green;
+	color: white;
+	padding: 10px;
+	font-size: 15px;
+	float: right;
+	margin-top: 20px;
+	font-family: verdana;
+	border-radius: 10px;
+}
+#emri{
+	width:180px;
+	background-color:lightgrey;
+	margin-bottom:15px;
+	border-radius: 5px;
+	padding: 10px;
+}
+#mbiemri{
+	width:180px;
+	background-color:lightgrey;
+	margin-bottom:15px;
+	border-radius: 5px;
+	color: black;
+	padding: 10px;
+}
+#mesazhi{
+	width:180px;
+	background-color:lightgrey;
+	height:130px;
+	border-radius: 10px;
+	color: black;
+	padding: 10px;
+}
+/*footeri*/
+.p3{
+	float:left;
+}
+.p4{
+	float: right;
+}
