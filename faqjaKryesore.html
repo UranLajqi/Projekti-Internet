@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Faqja Kryesore</title>
+	<link rel="stylesheet" type="text/css" href="CSS/faqjaKryesore.css">
+</head>
+<body>
+  
+<header>
+  <svg width="200" height="60">
+  <rect rx="60" ry="60" width="200" height="60" style="fill:black;stroke-width:3;stroke:rgb(0,0,0)"></rect>
+  <text x="45" y="40" fill="white" font-size="30px">
+    GElektron
+  </text>
+  <line x1="35" y1="15" x2="35" y2="50" style="stroke:yellow;stroke-width:6"></line>Na vejn keq, Browseri juaj nuk e perkrah SVG-ne</svg>
+  <p style="margin-left: 200px;margin-right: 0;">
+    Na kontaktoni: 044 948 213
+  </p>
+  <p style="margin-left: 30px;">
+    Email: <a href="MAILTO:uran_lajqi_1@outlook.com">uran_lajqi_1@outlook.com</a>
+  </p>
+</header>
+<hr>
+<nav>
+  <ul>
+    <li>
+      <a href="#">GElektron</a>
+    </li>
+    <li>
+      <a href="Lajmet/lajmet.html" target="_blank">Lajmet</a>
+    </li>
+    <li>
+      <a href="Statistika rreth teknologjise/Statistika.html" target="_blank">Statistikat</a>
+    </li>
+    <li>
+      <a href="Formulari/Formulari.html" target="_blank">Formulari</a>
+    </li>
+    <li>
+      <a href="Shop/shop.html" target="_blank">Shop</a>
+    </li>
+    <li>
+      <a href="#universitetet">Univerzitetet</a>
+    </li>
+    <li>
+      <a href="#krijues">Krijuest ne teknologji</a>
+    </li>
+    <li>
+      <a href="#info">Per me shume informata</a>
+    </li>
+    <li>
+      <a href="/Loja/u.html" target="_blank">About</a>
+    </li>
+  </ul>
+</nav>
+<hr>
+<br>
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">
+      1 / 3
+    </div><img src="foto/korporata.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">
+      2 / 3
+    </div><img src="foto/R7Cngl.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">
+      3 / 3
+    </div><img src="foto/foto2.jpg" style="width:100%">
+  </div><a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div><br>
+<div style="text-align:center"></div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script><br>
+<h2 id="universitetet">
+  Univerzitetet me te mira per Inxhinieri Kompjuterike
+</h2>
+<hr>
+<br>
+<section class="klasa2">
+  <div class="nenklasa2">
+    <h3 class="sekond">
+      <img src="FOTO/Untitled.png" width="15" height="15"> University of Oxford
+    </h3>
+    <p>
+      Universiteti i Oksfordit është universiteti më i vjetër në botën angleze-folëse dhe universiteti i dytë më i vjetër që mbijeton në botë.Ndërsa data e saktë e themelimit është e panjohur.
+    </p><a href="https://www.timeshighereducation.com/world-university-rankings/university-oxford" target="_blank">Lexo me shume</a><br>
+  </div>
+  <div class="nenklasa2">
+    <h3 class="sekond">
+      <img src="FOTO/Untitled.png" width="15" height="15"> ETH Zurich
+    </h3>
+    <p>
+      Themeluar në 1855 si Shkolla Politeknike Federale, një shekull e gjysmë më vonë ETH Cyrih tani konsiderohet midis disa prej universiteteve më prestigjioze në botë në shkencë dhe teknologji.
+    </p><a href="https://www.timeshighereducation.com/world-university-rankings/eth-zurich" target="_blank">Lexo me shume</a><br>
+  </div>
+  <div class="nenklasa2">
+    <h3 class="sekond">
+      <img src="FOTO/Untitled.png" width="15" height="15"> Stanford University
+    </h3>
+    <p>
+      E vendosur në zemër të Silicon Valley, Universiteti Stanford u themelua në 1885 nga Jane dhe Leland Stanford, "për të promovuar mirëqenien publike duke ushtruar një ndikim në emër të njerëzimit dhe civilizimit".
+    </p><a href="https://www.timeshighereducation.com/world-university-rankings/stanford-university" target="_blank">Lexo me shume</a>
+  </div>
+</section><br>
+<h2>
+  Evolumi i Kompjutereve neper vite
+</h2>
+<hr>
+<br>
+<section class="klasa3">
+  <p>
+    1936
+  </p>
+  <p>
+    1990
+  </p>
+  <p>
+    2005
+  </p>
+  <p>
+    2019
+  </p>
+</section>
+<section class="klasa3">
+  <img src="foto/kompjuteriPare.jpg" width="200" height="200"> <img src="foto/kompjuteriDyte.jpg" width="200" height="200"> <img src="foto/kompjuteriTrete.jpg" width="200" height="200"> <img src="foto/kompjuteriKatert.jpg" width="200" height="200">
+</section><br>
+<h2 id="krijues">
+  Personalite te rendesishme per teknologjine informative
+</h2>
+<hr>
+<br>
+<section class="klasa4">
+  <div class="nenklasa4">
+    <img src="FOTO/billgates.jpg" alt="Nuk eshte shfaqur" width="300" height="160">
+    <p>
+      <strong>Emri:</strong>Bill Gates
+    </p>
+    <p>
+      <strong>Puna:</strong>CEO
+    </p>
+    <p>
+      William Henry Gates III është një magnet i biznesit amerikan, zhvillues i programeve kompjuterike, investitor dhe filantrop.Ai njihet më së miri si bashkëthemelues i Korporatës Microsoft.
+    </p>
+    <p class="link1">
+      <a href="https://www.gatesnotes.com/" target="_blank">Lexoni me shume <small>&gt;&gt;</small></a>
+    </p>
+  </div>
+  <div class="nenklasa4">
+    <img src="FOTO/elonmusk.jpg" alt="Nuk eshte shfaqur" width="300" height="160">
+    <p>
+      <strong>Emri:</strong>Elon Musk
+    </p>
+    <p>
+      <strong>Puna:</strong>CEO
+    </p>
+    <p>
+      Elon Reeve Musk FRS është një inxhinier dhe sipërmarrës i teknologjisë. Ai mban nënshtetësi të Afrikës së Jugut, Kanadezit dhe Sh.B.A-së dhe është themeluesi, CEO dhe inxhinieri kryesor / projektuesi i SpaceX;
+    </p>
+    <p class="link1">
+      <a href="https://www.tesla.com/elon-musk" target="_blank">Lexoni me shume <small>&gt;&gt;</small></a>
+    </p>
+  </div>
+  <div class="nenklasa4">
+    <img src="FOTO/timbernerslee.png" alt="Nuk eshte shfaqur" width="300" height="160">
+    <p>
+      <strong>Emri:</strong>Tim Berners-Lee
+    </p>
+    <p>
+      <strong>Puna:</strong>CEO
+    </p>
+    <p>
+      Sir Timothy John Berners-Lee është një inxhinier anglez dhe shkencëtar i kompjuterit, i njohur më së miri si shpikësi i WWW. Ai është një profesor profesor i Shkencave Kompjuterike në Universitetin e Oksfordit
+    </p>
+    <p class="link1">
+      <a href="https://www.w3.org/People/Berners-Lee/" target="_blank">Lexoni me shume <small>&gt;&gt;</small></a>
+    </p>
+  </div>
+</section><br>
+<section class="klasa5">
+  <div class="nenklasa5" style="width: 200px;line-height: 2em;">
+    <h4>
+      Te dhenat
+    </h4><br>
+    <p>
+      GElektron<br>
+      Prishtine<br>
+      Kosove
+    </p>
+    <p>
+      Tel: 044 948 213<br>
+      <a style="color: white;" href="MAILTO:uran_lajqi_1@outlook.com">uran_lajqi_1@outlook.com</a>
+    </p>
+    <p>
+      <strong>Oret e punes</strong><br>
+      Hene - Premte: 08:00 - 13:00
+    </p>
+  </div>
+  <div class="nenklasa5" style="width: 200px; line-height: 2em;">
+    <h4>
+      Rri i kycur
+    </h4><br>
+    <a href="https://www.linkedin.com/" target="_blank"><img src="FOTO/linkedin.jpg" alt="nuk eshte shfaqur" width="35" height="30">Lidhu me LinkedIn</a>
+    <hr>
+    <br>
+    <a href="https://twitter.com/" target="_blank"><img src="FOTO/twitter.png" alt="nuk eshte shfaqur" width="35" height="30">Ndjeki Twetat tone</a>
+    <hr>
+    <br>
+    <a href="https://www.pinterest.com/" target="_blank"><img src="FOTO/pinterest.jpg" alt="nuk eshte shfaqur" width="35" height="30">Fotot ne Pinterest</a>
+    <hr>
+    <br>
+    <a href="https://rss.com/" target="_blank"><img src="FOTO/RSS.png" alt="nuk eshte shfaqur" width="35" height="30">RSS Feed</a>
+    <hr>
+  </div>
+  <div class="nenklasa5" style="width:200px; ">
+    <h4>
+      Nga Blogu
+    </h4><br>
+    <p>
+      Postuar nga Urani ne 12.12.2019<br>
+      Pse profesioni i Inxhinieris Kompjuterike eshte i<br>
+      larmishem?<br>
+      <a href="Lajmet/lajmet.html#titulli2" target="_blank" style="float:right;">Lexo me shume</a><br>
+    </p>
+    <p>
+      Postuar nga Rinori ne 17.11.2019<br>
+      What Kind of Job Can<br>
+      You Get With a BS in<br>
+      Computer Engineering?<br>
+      <a href="Lajmet/lajmet.html#titulli1" target="_blank" style="float:right;">Lexo me shume</a>
+    </p>
+  </div>
+  <div class="nenklasa5" style="width: 200px;">
+    <h4>
+      Na kontaktoni
+    </h4><br>
+    <input id="emri" type="text" name="emri" placeholder="Emri"><br>
+    <input id="mbiemri" type="email" name="Email" placeholder="Email"><br>
+    <textarea id="mesazhi" type="message" name="mesezh" placeholder="Mesazhi"></textarea><br>
+    <input type="submit" value="Submit" id="butoni">
+  </div>
+</section><br>
+<footer id="info">
+  <p class="p3">
+    Copyright &copy; 2019 GElektron - Te gjitha te drejtat e rezevuara
+  </p>
+  <p class="p4">
+    Template by OS Templates
+  </p>
+  <p></p>
+</footer>
+
+</body>
+</html>
